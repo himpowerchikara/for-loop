@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> 다다익선 </title>
+	<style type="text/css">
+		
+
+
+#eraser{ width:100%; height:300px; position:absolute;left:0px; top:0px;z-index:2}
+#eraser2{ width:100%; height:100px; position:absolute;left:0px; top:650px; z-index:3}
+#blue{width:110%; height:100%; position:absolute; left:-10%; background-color: blue;}
+
+/* noise */
+#un{width:60px; height:50px; position:absolute; left:750px; top:200px;  z-index:1}
+#un2{width:60px; height:50px; position:absolute; left:675px; top:200px; z-index:1}	
+#un3{width:50px; height:50px; position:absolute; left:610px; top:200px; z-index:1}	
+#un4{width:60px; height:50px; position:absolute; left:825px; top:200px; z-index:1}
+#un5{width:50px; height:50px; position:absolute; left:900px; top:200px; z-index:1}
+#un6{width:40px; height:50px; position:absolute; left:960px; top:200px; z-index:1}
+#un7{width:20px; height:50px; position:absolute; left:1010px; top:200px; z-index:1}
+#un8{width:40px; height:50px; position:absolute; left:560px; top:200px; z-index:1}
+#un9{width:20px; height:50px; position:absolute; left:530px; top:200px; z-index:1}
+
+#un10{width:40px; height:25px; position:absolute; left:763px; top:100px;  z-index:3}
+#un11{width:40px; height:25px; position:absolute; left:713px; top:100px; z-index:3}	
+#un12{width:20px; height:25px; position:absolute; left:690px; top:100px; z-index:3}	
+#un13{width:40px; height:25px; position:absolute; left:813px; top:100px; z-index:3}
+#un14{width:20px; height:25px; position:absolute; left:855px; top:100px; z-index:3}
+
+#un15{width:100px; height:100px; position:absolute; left:470px; top:650px;  z-index:4}
+#un16{width:120px; height:100px; position:absolute; left:590px; top:650px; z-index:4}	
+#un17{width:120px; height:100px; position:absolute; left:725px; top:650px; z-index:4}	
+#un18{width:120px; height:100px; position:absolute; left:860px; top:650px; z-index:4}
+#un19{width:100px; height:100px; position:absolute; left:990px; top:650px; z-index:4}
+#un20{width:50px; height:100px; position:absolute; left:410px; top:650px; z-index:4}
+#un21{width:50px; height:100px; position:absolute; left:1100px; top:650px; z-index:4}
+
+#un22{width:60px; height:50px; position:absolute; left:0px; top:200px; opacity:0.7; z-index:4}
+#un23{width:60px; height:50px; position:absolute; left:100px; top:150px; opacity:0.7; z-index:4}
+#un24{width:60px; height:50px; position:absolute; left:180px; top:80px; opacity:0.7; z-index:4}
+#un25{width:60px; height:50px; position:absolute; left:260px; top:20px;opacity:0.7; z-index:4}
+/* noise */
+
+
+#untest {width:120px; height:100px; position:absolute; left:600px; top:100px; opacity:1; z-index:5}
+#untest2 {width:300px; height:250px; position:absolute; left:900px; top:200px; opacity:0.7; z-index:5 }
+#untest3 {width:120px; height:100px; position:absolute; left:1000px; top:500px; opacity:1; z-index:5 }
+
+#flame{width:700px; height:100px; position:absolute; left:430px; top:550px; z-index:4}
+#flame2{width:480px; height:80px; position:absolute; left:540px; top:220px; z-index:4}
+
+#sq{width:10px; height:10px; background:rgb(171,242,0); position:absolute; 
+		 animation:drop 10s infinite; z-index:10;
+}
+@keyframes drop{
+		from{position:absolute; left:10px; top:10px;}
+		to{position:absolute; left:1500px; top:10px;}
+}
+
+#sq2{width:10px; height:10px; background:rgb(171,242,0); position:absolute; 
+		 animation:dropp 10s infinite; z-index:10;
+}
+@keyframes dropp{
+		from{position:absolute; left:1500px; top:730px;}
+		to{position:absolute; left:10px; top:730px;}
+}
+
+#sq3{width:3px; height:3px; background:rgb(171,242,0); position:absolute; 
+		 animation:droppp 10s infinite; z-index:10;
+}
+@keyframes droppp{
+		from{position:absolute; left:1500px; top:330px;}
+		to{position:absolute; left:10px; top:330px;}
+}
+
+#sq4{width:5px; height:5px; background:rgb(171,242,0); position:absolute; 
+		 animation:dropppp 10s infinite; z-index:10;
+}
+@keyframes dropppp{
+		from{position:absolute; left:10px; top:400px;}
+		to{position:absolute; left:1500px; top:400px;}
+}
+
+#star{width:250px; height:250px;  position:absolute; left:0px; top:100px;
+	
+		 animation:starr 20s infinite;
+		  z-index:12;
+}
+@keyframes starr{
+		10%{position:absolute; left:0px; top:200px;}
+		30%{position:absolute; left:500px; top:500px;}
+		50%{position:absolute; left:1200px; top:400px;}
+		70%{position:absolute; left:1000px; top:50px;}
+		90%{position:absolute; left:0px; top:200px;}
+}
+
+#star2{width:100px; height:100px;  position:absolute; left:0px; top:100px;
+	
+		 animation:starrr 40s infinite;
+		  z-index:12;
+}
+@keyframes starrr{
+		10%{position:absolute; left:0px; top:200px; transform:rotate3D(0,1,0,360deg);}
+		30%{position:absolute; left:600px; top:600px;transform:rotate3D(0,1,0,-360deg);}
+		50%{position:absolute; left:1300px; top:500px;transform:rotate3D(1,1,1,360deg);}
+		70%{position:absolute; left:1100px; top:150px;transform:rotate3D(1,1,1,3600deg);}
+		90%{position:absolute; left:0px; top:300px; transform:rotate3D(1,1,0,-360deg);}
+}
+
+#vid{transition: all 0.3s;  width:0px;   position:absolute; left:530px; top:260px; 
+			  z-index:11;
+}
+
+
+
+
+
+	</style>
+
+</head>
+<body>
+
+
+
+
+<div id = sq></div>
+<div id = sq2></div>
+<div id = sq3></div>
+<div id = sq4></div>
+
+		<div id= blue></div>
+
+	<img id = flame src = "flame.png">
+	<img id = flame2 src = "flame.png">
+
+	<img id= eraser src= eraser.jpg>
+	<img id= eraser2 src= eraser.jpg>
+
+<img id = un src = "future2.gif">
+<img id = un2 src = "noise1.gif">
+<img id = un3 src = "noise1.gif">
+<img id = un4 src = "future2.gif">
+<img id = un5 src = "lio.gif">
+<img id = un6 src = "future2.gif">
+<img id = un7 src = "noise1.gif">
+<img id = un8 src = "dc.gif">
+<img id = un9 src = "noise1.gif">
+
+<img id = un10 src = "future3.gif">
+<img id = un11 src = "future2.gif">
+<img id = un12 src = "noise1.gif">
+<img id = un13 src = "future5.gif">
+<img id = un14 src = "noise2.gif">
+
+<img id = un15 src = "noise2.gif">
+<img id = un16 src = "lio.gif">
+<img id = un17 src = "noise1.gif">
+<img id = un18 src = "future2.gif">
+<img id = un19 src = "noise1.gif">
+<img id = un20 src = "future2.gif">
+<img id = un21 src = "noise1.gif">
+
+<img id = star src= "star.png">
+<img id = star2 src= "star.png">
+
+
+<img id= untest src= "green.gif" >
+<img id= untest2 src= "green.gif" >
+<img id= untest3 src= "future4.gif" >
+
+<video id="vid" src="gog.mp4" type="video/mp4" ></video>
+
+	<audio id="gd">
+  <source src="grand.mp3" type="audio/mpeg"></audio>
+
+<script type="text/javascript">
+
+
+
+
+/* noise*/
+	for(var i=0;i<15;i++){
+	var t = document.getElementById("un");
+	var k = t.cloneNode(true);
+	k.style.top = i*50 +"px"
+	document.body.appendChild(k);
+}
+for(var i=0;i<15;i++){
+	var t = document.getElementById("un2");
+	var k = t.cloneNode(true);
+	k.style.top = i*50 +"px"
+	document.body.appendChild(k);
+}
+for(var i=0;i<15;i++){
+	var t = document.getElementById("un3");
+	var k = t.cloneNode(true);
+	k.style.top = i*50 +"px"
+	document.body.appendChild(k);
+}
+for(var i=0;i<15;i++){
+	var t = document.getElementById("un4");
+	var k = t.cloneNode(true);
+		k.style.top = i*50 +"px"
+	document.body.appendChild(k);
+}
+for(var i=0;i<15;i++){
+	var t = document.getElementById("un5");
+	var k = t.cloneNode(true);
+		k.style.top = i*50 +"px"
+	document.body.appendChild(k);
+}
+for(var i=0;i<15;i++){
+	var t = document.getElementById("un6");
+	var k = t.cloneNode(true);
+		k.style.top = i*50 +"px"
+	document.body.appendChild(k);
+}
+for(var i=0;i<15;i++){
+	var t = document.getElementById("un7");
+	var k = t.cloneNode(true);
+		k.style.top = i*50 +"px"
+	document.body.appendChild(k);
+}
+for(var i=0;i<15;i++){
+	var t = document.getElementById("un8");
+	var k = t.cloneNode(true);
+		k.style.top = i*50 +"px"
+	document.body.appendChild(k);
+}
+for(var i=0;i<15;i++){
+	var t = document.getElementById("un9");
+	var k = t.cloneNode(true);
+		k.style.top = i*50 +"px"
+	document.body.appendChild(k);
+}
+for(var i=0;i<12;i++){
+	var t = document.getElementById("un10");
+	var k = t.cloneNode(true);
+		k.style.top = i*25 +"px"
+	document.body.appendChild(k);
+}
+for(var i=0;i<12;i++){
+	var t = document.getElementById("un11");
+	var k = t.cloneNode(true);
+		k.style.top = i*25 +"px"
+	document.body.appendChild(k);
+}
+for(var i=0;i<12;i++){
+	var t = document.getElementById("un12");
+	var k = t.cloneNode(true);
+		k.style.top = i*25 +"px"
+	document.body.appendChild(k);
+}
+for(var i=0;i<12;i++){
+	var t = document.getElementById("un13");
+	var k = t.cloneNode(true);
+		k.style.top = i*25 +"px"
+	document.body.appendChild(k);
+}
+for(var i=0;i<12;i++){
+	var t = document.getElementById("un14");
+	var k = t.cloneNode(true);
+		k.style.top = i*25 +"px"
+	document.body.appendChild(k);
+}
+
+/* noise end*/
+
+
+	for(var i=0;i<5;i++){
+	var t = document.getElementById("sq");
+	var k = t.cloneNode(true);
+	k.style.left = Math.random()*window.innerWidth +"px"
+	k.style.top = Math.random()*window.innerHeight +"px"
+
+	var time = Math.random();
+	k.style.animationDuration = time+"s";
+	document.body.appendChild(k);
+}
+	for(var i=0;i<5;i++){
+	var t = document.getElementById("sq2");
+	var k = t.cloneNode(true);
+	k.style.left = Math.random()*window.innerWidth +"px"
+	k.style.top = Math.random()*window.innerHeight +"px"
+
+	var time = Math.random();
+	k.style.animationDuration = time+"s";
+	document.body.appendChild(k);
+}
+	for(var i=0;i<5;i++){
+	var t = document.getElementById("sq3");
+	var k = t.cloneNode(true);
+	k.style.left = Math.random()*window.innerWidth +"px"
+	k.style.top = Math.random()*window.innerHeight +"px"
+
+	var time = Math.random();
+	k.style.animationDuration = time+"s";
+	document.body.appendChild(k);
+}
+	for(var i=0;i<5;i++){
+	var t = document.getElementById("sq4");
+	var k = t.cloneNode(true);
+	k.style.left = Math.random()*window.innerWidth +"px"
+	k.style.top = Math.random()*window.innerHeight +"px"
+
+	var time = Math.random();
+	k.style.animationDuration = time+"s";
+	document.body.appendChild(k);
+}
+
+var toggle = "off"
+star.onclick=function(){
+			if(toggle == "off"){
+			toggle = "on";
+				vid.play();
+				vid.style.width="500px";
+				vid.style.height="350px";
+				gd.pause();
+			vid.currentTime=0;
+			}
+			else{ 
+			toggle = "off";
+			
+			vid.pause();
+			vid.style.width="0%";
+			vid.style.height="0%";	
+			}
+			}	
+
+star2.onclick=function(){
+			if(toggle == "off"){
+			toggle = "on";
+			gd.play();
+			gd.currentTime=0;
+			vid.pause();
+			vid.style.width="0%";
+			vid.style.height="0%";
+			}
+			else{ 
+			toggle = "off";
+			gd.pause();
+			}
+			}	
+
+
+
+</script>
+</body>
+</html>
